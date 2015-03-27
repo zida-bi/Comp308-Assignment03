@@ -2,10 +2,66 @@
 <html>
   <head>
     <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <<!--css section -->
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="Scripts/amazingslider-1.css">
+    <link rel="stylesheet" href="/css/foundation.css">
+    <link rel="stylesheet" href="/css/app.css">
+    
   </head>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+   
+   <% include partials/header.ejs %>
+   
+   <div class="row">
+       
+       <div class="large-9 medium-9 small-12 columns">
+          <!--welcome statement-->
+            <div class="row">
+                <div class="large-12 columns">
+                    <h1>Welcome to Zida's Home Page</h1>
+                </div>
+            </div>
+            <!--tagline-->
+            <div class="row">
+                <div class="large-12 columns">
+                    <h3>Software Engineers are Changing the World!</h3>
+                </div>
+            </div>
+            <!--tagline explaination-->
+            <div class="row">
+                <div class="large-12 columns">
+                    <center>
+                        <p>
+                            &bull; C# and Java Development
+                        </p>
+                        <p>
+                            &bull; Web Development
+                        </p>
+                        <p>
+                            &bull; Automation Testing
+                        </p>
+                    </center>
+                </div>
+            </div>           
+       </div>
+       <div class="large-3 medium-3 columns"></div>
+       
+   </div>
+   
+   <% include partials/home.ejs %>
+   
+   <% include partials/footer.ejs %>
+    
+    
+    
+    <!--JavaScripts section -->
+    <script src="/Scripts/jquery.js"></script>
+    <script src="/Scripts/jquery-2.1.3.min.js"></script> 
+    <script src="/Scripts/Libs/foundation.min.js"></script>   
+    <script src="/Scripts/amazingslider.js"></script>
+    <script src="Scripts/initslider-1.js"></script>
+    <script src="/Scripts/app.js"></script>
+    
   </body>
 </html>

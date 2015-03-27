@@ -1,0 +1,126 @@
+/*File Name: app.css
+    Author: Zida Bi, 300716389
+    Website: Zida's Home
+    File Description: CSS file to modify HTML page content
+*/
+
+/*Body*/
+body {
+    background-size:auto auto;
+    background-image: url('../assets/images/texture.jpg');
+}
+
+#logo-small{
+    height: 80px;
+}
+
+/*On nav bar, indicate the current page, big size*/
+#currentPg{
+    background-color:#2081ca;
+}
+
+/*On nav bar, indicate current page, medium down sizes*/
+#small-current{
+    background-color: #1e1e1e;
+}
+
+/*nav bar image sizes*/
+.item{
+    border-radius:13px;
+}
+
+/*tagline location*/
+h3 {
+    text-align: center;
+}
+
+/*page header location*/
+h1 {
+    text-align: center;
+}
+
+/*nav bar for big up size*/
+.icon-bar{
+    background-color:#5BA7DE;
+    border-radius:13px;
+}
+
+/*More work button on home page*/
+#workMore{
+    font-size:medium;
+    text-align:center;
+    background-color:#5BA7DE;
+    width:89%;
+}
+
+/*drop down list button for social networks in home page*/
+#drop{
+    width:auto;
+}
+
+/*social network dropdown list items*/
+#drpBtn{
+    background-color:#5BA7DE;
+    text-align:center;
+    font-size:medium;
+}
+
+/*copyright footer*/
+h6{
+    font-size:xx-small;
+    text-align:center;
+}
+
+/*medium size more work button*/
+#m-morework
+{
+    width:30%;
+}
+
+/*small size more work button*/
+#small-down-morework{
+    width:30%;
+    font-size:60%;
+}
+
+/*bread nav bar color*/
+.breadcrumbs{
+    background-color:#FFE5D6;
+}
+
+/*personal picture in about me page*/
+#personalPic{
+    height:50%;
+    width:50%;
+}
+
+/*contact information in about me page*/
+#contactInfo{
+    list-style-type:none;
+}
+
+/*coop work exp in about me page*/
+#company{
+    font-weight:bold;
+}
+
+/*slider container */
+#amazingslider-wrapper-1{
+    
+    display:block;
+    position:relative;
+    max-width:650px;
+    margin:0px auto 0px;
+}
+
+/*slider*/
+#amazingslider-1{
+    display:block;
+    position:relative;
+    margin:0 auto;
+}
+
+/*slider list*/
+#amazingslider-slides{
+    display:none;
+}
