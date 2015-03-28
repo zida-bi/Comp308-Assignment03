@@ -1,4 +1,6 @@
-<center>
+<!--header-->
+  <!--logo-->
+   <center>
     <div class="row  show-for-small-down">
        <div class="small-12 column">
            <div class="row">
@@ -17,23 +19,23 @@
             <div class="row">
                 <div class="large-12 medium-12 columns show-for-medium-up">
                     <div class="icon-bar six-up">
-                        <a href="/" class="item" id="currentPg">
+                        <a href="/" class="item" <% if (title === "Assignment03") { %>id="currentPg"<% }%> >
                             <img src="/images/home.svg" />
                             <label>Home</label>
                         </a>
 
-                        <a href="aboutme.html" class="item">
+                        <a href="aboutme.html" class="item" <% if (title === "About Me") { %>id="currentPg"<% }%> >
                             <img src="/images/aboutme.svg" />
                             <label class="show-for-large-up">About Me</label>
                             <label class="show-for-medium-only">About</label>
                         </a>
 
-                        <a href="projects.html" class="item">
+                        <a href="projects.html" class="item" <% if (title === "My Projects") { %>id="currentPg"<% }%> >
                             <img src="/images/project.svg" />
                             <label>Projects</label>
                         </a>
 
-                        <a href="services.html" class="item">
+                        <a href="services.html" class="item" <% if (title === "My Services") { %>id="currentPg"<% }%> >
                             <img src="/images/service.svg" />
                             <label>Services</label>
                         </a>
@@ -43,7 +45,7 @@
                             <label>GitHub</label>
                         </a>
 
-                        <a href="contactme.html" class="item">
+                        <a href="contactme.html" class="item" <% if (title === "Trying to Build Contact With Me?") { %>id="currentPg"<% }%> >
                             <img src="/images/contactme.svg" />
                             <label class="show-for-large-up">Contact Me</label>
                             <label class="show-for-medium-only">Contact</label>
@@ -53,19 +55,19 @@
                 
                 <div class="small-12 columns show-for-small-down">
                     <div class="icon-bar four-up">
-                        <a href="/" class="item" id="currentPg">
+                        <a href="/" class="item" <% if (title === "Assignment03") { %>id="currentPg"<% }%> >
                             <img src="/images/home.svg" />
                         </a>
 
-                        <a href="aboutme.html" class="item">
+                        <a href="aboutme.html" class="item" <% if (title === "About Me") { %>id="currentPg"<% }%> >
                             <img src="/images/aboutme.svg" />
                         </a>
 
-                        <a href="projects.html" class="item">
+                        <a href="projects.html" class="item" <% if (title === "My Projects") { %>id="currentPg"<% }%> >
                             <img src="/images/project.svg" />
                         </a>
 
-                        <a href="contactme.html" class="item">
+                        <a href="contactme.html" class="item" <% if (title === "Trying to Build Contact With Me?") { %>id="currentPg"<% }%> >
                             <img src="/images/contactme.svg" />
                         </a>
                     </div>
@@ -76,7 +78,11 @@
             <div class="row">
                 <div class="large-12 medium-12 small-12 columns">
                     <ul class="breadcrumbs">
-                        <li class="current"><a href="index.html">Home</a></li>
+                        <li <% if (title === "Assignment03") { %> class="current"<% } %>><a href="/">Home</a></li>
+                        <%if (title === "About Me") { %><li class="current"><a href="aboutme.html">About</a></li><% } %>
+                        <%if (title === "My Projects") { %><li class="current"><a href="projects.html">Projects</a></li><% } %>
+                        <%if (title === "Trying to Build Contact With Me?") { %><li class="current"><a href="contactme.html">Contact</a></li><% } %>
+                        <%if (title === "My Services") { %><li class="current"><a href="services.html">Services</a></li><% } %>
                     </ul>
                 </div>
             </div>
