@@ -2,7 +2,7 @@
 <html>
   <head>
     <title><%= title %></title>
-    <<!--css section -->
+    <!--css section -->
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" type="text/css" href="Scripts/amazingslider-1.css">
     <link rel="stylesheet" href="/css/foundation.css">
@@ -31,6 +31,10 @@
     
     <%    if(title == "Trying to Build Contact With Me?")  {%>
     <%    include partials/contactme.ejs %>
+    <%    }  %> 
+    
+    <%    if(title == "My Services")  {%>
+    <%    include partials/services.ejs %>
     <%    }  %> 
    
    <% include partials/footer.ejs %>   

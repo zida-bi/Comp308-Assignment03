@@ -21,4 +21,9 @@ router.get('/contactme.html', function(req, res, next) {
   res.render('other', { title: 'Trying to Build Contact With Me?' });
 });
 
+/* GET services me page. */
+router.get('/services.html', function(req, res, next) {
+  res.render('other', { title: 'My Services' });
+});
+
 module.exports = router;
