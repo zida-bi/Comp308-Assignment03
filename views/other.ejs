@@ -10,11 +10,23 @@
     
   </head>
   <body>
-   
+     
    <% include partials/header.ejs %>
+   
+   <!--page title-->
+    <div class="row">
+        <div class="large-12 medium-12 small-12 columns">
+            <h1><%= title %></h1>
+        </div>
+    </div>
+    <hr />
    
     <%    if(title == "About Me")  {%>
     <%    include partials/aboutme.ejs %>
+    <%    }  %> 
+    
+    <%    if(title == "My Projects")  {%>
+    <%    include partials/projects.ejs %>
     <%    }  %> 
    
    <% include partials/footer.ejs %>   

@@ -6,9 +6,14 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Assignment03' });
 });
 
-/* GET other pages. */
+/* GET about me page. */
 router.get('/aboutme.html', function(req, res, next) {
   res.render('other', { title: 'About Me' });
+});
+
+/* GET projects pages. */
+router.get('/projects.html', function(req, res, next) {
+  res.render('other', { title: 'My Projects' });
 });
 
 module.exports = router;
